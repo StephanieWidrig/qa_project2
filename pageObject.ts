@@ -17,6 +17,7 @@ export class amazonPage extends BasePage {
     createListBtn: By = By.xpath('//input[@class="a-button-input"] ')
     listNameInput: By = By.xpath('(//input[@type="text"])[3]')
     createList2Btn: By= By.xpath('(//input[@class="a-button-input a-declarative"])[3]')
+    listResults: By=By.xpath('//div[@role="heading"]')
 
 
     flagBtn: By = By.xpath('//span[@class="icp-nav-flag icp-nav-flag-us"]')

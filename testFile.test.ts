@@ -9,11 +9,12 @@ const myTest = new amazonPage
 
 test("Testings login", async () => {
     await myTest.navigate()
-    await myTest.click(myTest.logInBtn)
-    await myTest.setInput(myTest.emailInput, "ajt.shops@gmail.com")
-    await myTest.click(myTest.continueBtn)
-    await myTest.setInput(myTest.passwordInput, "Test1234!")
-    await myTest.click(myTest.signInBtn)
-    expect(Response).toContain("Top picks for you")
+    await myTest.click(myTest.accountsAndListBtn)
+    await myTest.click(myTest.yourListBtn)
+    await myTest.click(myTest.createListBtn)
+    await myTest.setInput(myTest.listNameInput, "Test")
+    await myTest.click(myTest.createList2Btn)
+    let response = await myTest.getText(myTest.espanolRespons)
+    expect(Response).toContain("Test")
     
     });
