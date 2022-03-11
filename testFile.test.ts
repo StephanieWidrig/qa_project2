@@ -14,7 +14,7 @@ test("Testings login", async () => {
     await myTest.click(myTest.createListBtn)
     await myTest.setInput(myTest.listNameInput, "Test")
     await myTest.click(myTest.createList2Btn)
-    let response = await myTest.getText(myTest.espanolRespons)
+    let response = await myTest.getText(myTest.listResults)
     expect(Response).toContain("Test")
     
     });
