@@ -8,15 +8,21 @@ export class amazonPage extends BasePage {
     searchBarInput: By = By.xpath('//input[@id="twotabsearchtextbox"]')
     golfBallResults: By = By.xpath('(//span[@class="a-size-medium a-color-base a-text-normal"])[1]')
     addToCartBtn: By = By.xpath('//input[@id="add-to-cart-button"]')
-
     magnifyingBtn: By = By.xpath('//input[@id="nav-search-submit-button"]')
-    sunGlassesResults: By = By.xpath('//div[@class="s-desktop-width-max s-desktop-content s-opposite-dir sg-row"]')
+    addToCartResults: By = By.xpath('(//span[@class="a-size-medium-plus a-color-base sw-atc-text a-text-bold"])')
+    
 
     logInBtn: By = By.xpath ('(//span[@id="nav-link-accountList-nav-line-1"])')
     emailInput: By = By.xpath ('//input[@type="email"]') 
     continueBtn: By = By.xpath('(//input[@id="continue"])[1]') 
     passwordInput: By = By.xpath('(//input[@type="password"]) [1]') 
     signInBtn: By = By.xpath('(//input[@id="signInSubmit"])')
+
+    flagBtn: By = By.xpath('//span[@class="icp-nav-flag icp-nav-flag-us"]')
+    espanolBtn: By = By.xpath('(//span[@dir="ltr"])[13]')
+    saveChangesBtn: By = By.xpath('//input[@class="a-button-input"]')
+
+
 
 
     constructor() {
