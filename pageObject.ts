@@ -12,11 +12,12 @@ export class amazonPage extends BasePage {
     addToCartResults: By = By.xpath('(//span[@class="a-size-medium-plus a-color-base sw-atc-text a-text-bold"])')
     
 
-    logInBtn: By = By.xpath ('(//span[@id="nav-link-accountList-nav-line-1"])')
-    emailInput: By = By.xpath ('//input[@type="email"]') 
-    continueBtn: By = By.xpath('(//input[@id="continue"])[1]') 
-    passwordInput: By = By.xpath('(//input[@type="password"]) [1]') 
-    signInBtn: By = By.xpath('(//input[@id="signInSubmit"])')
+    accountsAndListBtn: By = By.xpath ('(//span[@class="nav-line-2"]) [4]')
+    yourListBtn: By = By.xpath ('(//h2[@class="a-spacing-none ya-card__heading--rich a-text-normal"])[10]') 
+    createListBtn: By = By.xpath('//input[@class="a-button-input"] ')
+    listNameInput: By = By.xpath('(//input[@type="text"])[3]')
+    createList2Btn: By= By.xpath('(//input[@class="a-button-input a-declarative"])[3]')
+
 
     flagBtn: By = By.xpath('//span[@class="icp-nav-flag icp-nav-flag-us"]')
     espanolBtn: By = By.xpath('(//i[@class="a-icon a-icon-radio"])[2]')
