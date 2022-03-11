@@ -13,6 +13,7 @@ export class amazonPage extends BasePage {
     
     basicsBtn: By= By.xpath('(//a[@class="nav-a  "])[2]')
     amazonHomeBtn: By = By.xpath('//a[@class="nav-logo-link nav-progressive-attribute"]')
+    ukraine: By = By.xpath('(//div[@class="a-section a-spacing-none a-padding-base a-text-center _top-banner-text-link_desktopStyle_top-banner__1bo6o top-banner-text-link"])')
 
 
 
