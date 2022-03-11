@@ -7,14 +7,11 @@ const driver = new Builder().withCapabilities(Capabilities.chrome()).build()
 
 const myTest = new amazonPage
 
-test("Testings login", async () => {
+test("Amazon HomeB Button", async () => {
     await myTest.navigate()
-    await myTest.click(myTest.accountsAndListBtn)
-    await myTest.click(myTest.yourListBtn)
-    await myTest.click(myTest.createListBtn)
-    await myTest.setInput(myTest.listNameInput, "Test")
-    await myTest.click(myTest.createList2Btn)
-    let response = await myTest.getText(myTest.listResults)
-    expect(Response).toContain("Test")
+    await myTest.click(myTest.basicsBtn)
+    await myTest.click(myTest.amazonHomeBtn)
+    let response = await myTest.getText(myTest.ukraine)
+    expect(Response).toContain("Help the people of Ukraine")
     
     });
