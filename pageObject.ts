@@ -11,12 +11,11 @@ export class amazonPage extends BasePage {
     magnifyingBtn: By = By.xpath('//input[@id="nav-search-submit-button"]')
     addToCartResults: By = By.xpath('(//span[@class="a-size-medium-plus a-color-base sw-atc-text a-text-bold"])')
     
+    basicsBtn: By= By.xpath('(//a[@class="nav-a  "])[2]')
+    amazonHomeBtn: By = By.xpath('//a[@class="nav-logo-link nav-progressive-attribute"]')
+    ukraine: By = By.xpath('(//div[@class="a-section a-spacing-none a-padding-base a-text-center _top-banner-text-link_desktopStyle_top-banner__1bo6o top-banner-text-link"])')
 
-    logInBtn: By = By.xpath ('(//span[@id="nav-link-accountList-nav-line-1"])')
-    emailInput: By = By.xpath ('//input[@type="email"]') 
-    continueBtn: By = By.xpath('(//input[@id="continue"])[1]') 
-    passwordInput: By = By.xpath('(//input[@type="password"]) [1]') 
-    signInBtn: By = By.xpath('(//input[@id="signInSubmit"])')
+
 
     flagBtn: By = By.xpath('//span[@class="icp-nav-flag icp-nav-flag-us"]')
     espanolBtn: By = By.xpath('(//i[@class="a-icon a-icon-radio"])[2]')
