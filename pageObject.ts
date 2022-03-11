@@ -21,6 +21,7 @@ export class amazonPage extends BasePage {
     flagBtn: By = By.xpath('//span[@class="icp-nav-flag icp-nav-flag-us"]')
     espanolBtn: By = By.xpath('(//span[@dir="ltr"])[13]')
     saveChangesBtn: By = By.xpath('//input[@class="a-button-input"]')
+    espanolResponse: By = By.xpath('(//span[@class="nav-line-2"])[3]')
 
 
 
