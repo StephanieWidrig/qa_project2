@@ -1,9 +1,8 @@
-import { Builder, Capabilities } from "selenium-webdriver"
+
 
 import {amazonPage} from "./pageObject"
 
-const chromedriver= require('chromedriver')
-const driver = new Builder().withCapabilities(Capabilities.chrome()).build()
+
 
 const myTest = new amazonPage
 
@@ -22,7 +21,7 @@ test("Amazon HomeB Button", async () => {
         await myTest.click(myTest.golfBallResults)
         await myTest.click(myTest.addToCartBtn)
         let response = await myTest.getText(myTest.addToCartResults)
-        expect(response).toContain( "Added to cart")
+        expect(response).toContain( "Added to Cart")
         
     
     });
@@ -33,7 +32,7 @@ test("Amazon HomeB Button", async () => {
         await myTest.click(myTest.espanolBtn)
         await myTest.click(myTest.saveChangesBtn)
         let response = await myTest.getText(myTest.espanolResponse)
-        expect(response).toContain("Carrito")
-    
+        expect(response).toContain("Cart")
+    await myTest.driver.quit()
     });
     
